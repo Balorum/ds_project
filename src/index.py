@@ -1,6 +1,9 @@
 import gradio as gr
 import numpy as np
 import tensorflow as tf
+from tensorflow.keras.models import load_model
+
+model = load_model("models/newmodel.h5")
 
 
 def process_image(image):
@@ -20,5 +23,5 @@ iface = gr.Interface(
     examples=["src/examples/cat.jpg", "src/examples/deer.jpg", "src/examples/frog.jpg"],
 )
 
-
+print(model.summary())
 iface.launch()
