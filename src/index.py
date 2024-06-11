@@ -61,11 +61,6 @@ interface = gr.Interface(
             ["ResNetBased Model", "MobileNetBased Model"],
             value="ResNetBased Model",
             label="Model Choice",
-            examples=[
-                "src/examples/cat.jpg",
-                "src/examples/deer.jpg",
-                "src/examples/frog.jpg",
-            ],
         ),
     ],
     outputs=gr.Label(num_top_classes=3, label="Predictions"),
