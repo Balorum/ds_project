@@ -1,13 +1,14 @@
 import tensorflow as tf
 import gradio as gr
+import os
 
-from src.load_dataset.load_dataset import classes
+from notebooks.load_dataset.load_dataset import classes
 
-nm_model = tf.keras.models.load_model("../models/mn_model.keras")
+nm_model = tf.keras.models.load_model("models/mn_model.keras")
 
-resnet_model = tf.keras.models.load_model("../models/newmodel.h5")
+resnet_model = tf.keras.models.load_model("models/resnet_best.h5")
 
-inception_model = tf.keras.models.load_model("../models/inception_v3.keras")
+inception_model = tf.keras.models.load_model("models/inception_v3.keras")
 
 cifar10_labels = classes
 models = ["ResNetBased Model", "MobileNetBased Model", "InceptionBased Model"]
@@ -38,8 +39,10 @@ def get_model(model_name):
 
 interface = gr.Interface(
     fn=classify_image,
-    inputs=[gr.Image(type="numpy", image_mode="RGB", label="Input Image"),
-            gr.Dropdown(models, label="Model Choice")],
+    inputs=[
+        gr.Image(type="numpy", image_mode="RGB", label="Input Image"),
+        gr.Dropdown(models, label="Model Choice"),
+    ],
     outputs=gr.Label(num_top_classes=3, label="Predictions"),
 )
 
