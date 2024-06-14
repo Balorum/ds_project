@@ -76,6 +76,28 @@ def calculate_percent_right_mob(test, labels, model):
         print(
             f"Клас {i} ({classes[i]}): правильно класифіковано {correct_counts[i]} з {total_counts[i]} ({ratio:.2%})"
         )
+    plt.figure(figsize=(10, 6))
+    plt.bar(
+        range(10),
+        correct_counts,
+        color="blue",
+        alpha=0.7,
+        label="Правильно класифіковано",
+    )
+    plt.bar(
+        range(10),
+        total_counts - correct_counts,
+        bottom=correct_counts,
+        color="red",
+        alpha=0.7,
+        label="Неправильно класифіковано",
+    )
+    plt.xticks(range(10), classes, rotation=45)
+    plt.xlabel("Класи")
+    plt.ylabel("Кількість")
+    plt.title("Гістограма класифікацій")
+    plt.legend()
+    plt.show()
 
 
 def calculate_percent_right_base(test, labels, model):
@@ -97,3 +119,25 @@ def calculate_percent_right_base(test, labels, model):
         print(
             f"Клас {i} ({classes[i]}): правильно класифіковано {correct_counts[i]} з {total_counts[i]} ({ratio:.2%})"
         )
+    plt.figure(figsize=(10, 6))
+    plt.bar(
+        range(10),
+        correct_counts,
+        color="blue",
+        alpha=0.7,
+        label="Правильно класифіковано",
+    )
+    plt.bar(
+        range(10),
+        total_counts - correct_counts,
+        bottom=correct_counts,
+        color="red",
+        alpha=0.7,
+        label="Неправильно класифіковано",
+    )
+    plt.xticks(range(10), classes, rotation=45)
+    plt.xlabel("Класи")
+    plt.ylabel("Кількість")
+    plt.title("Гістограма класифікацій")
+    plt.legend()
+    plt.show()
