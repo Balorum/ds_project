@@ -1,9 +1,9 @@
 from tensorflow.keras.datasets import cifar10
 
-# Load CIFAR-10 dataset
+# Завантажимо датасет
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
-# Define class names
+# Створимо список класів
 classes = [
     "airplane",
     "automobile",
