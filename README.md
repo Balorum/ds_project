@@ -33,22 +33,23 @@ This repository contains a comprehensive image classification application based 
 
 1. Clone the repository:
 
-\```bash
+```bash
 git clone https://github.com/Balorum/ds_project.git
 cd ds_project
-\```
+```
 
 2. Create a virtual environment and activate it (for example python venv):
 
-   \```bash
-python -m venv venv
-source venv/bin/activate # On Windows use `venv\Scripts\activate`
-   \```
+   ```bash
+   python -m venv venv
+   source venv/bin/activate # On Windows use `venv\Scripts\activate`
+   ```
 
 3. Install the required packages:
-   \```bash
+
+   ```bash
    pip install -r requirements.txt
-   \```
+   ```
 
 4. Training the Models
    Open Jupyter Notebook:
@@ -71,10 +72,12 @@ Run the Gradio app:
 
 Install the required packages:
 
-\```bash
-python app.py
-\```
+```
+python main.py
+```
 
 Open the link provided by Gradio in your web browser. You should see a web interface where you can upload images and get predictions from the trained models.
+
+![An example of the image classification application](https://drive.google.com/file/d/1mI7JDzh-iLEXTq_PxXxh2hJVll_n4aTH/view?usp=drive_link)
 
 ### [**Link demo**](https://huggingface.co/spaces/the10or/class_pic)
