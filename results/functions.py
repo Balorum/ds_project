@@ -13,6 +13,17 @@ from notebooks.load_dataset.load_dataset import (
 
 
 def visualize_predictions(model, n=15, rows=3):
+    """
+    Візуалізує передбачення моделі на тестовому наборі даних.
+
+    Аргументи:
+    model (tf.keras.Model): Модель, яка буде використовуватись для передбачення.
+    n (int): Кількість зображень для візуалізації. За замовчуванням 15.
+    rows (int): Кількість рядів у графіку. За замовчуванням 3.
+
+    Повертає:
+    None: Функція нічого не повертає, вона лише візуалізує результати.
+    """
     start = np.random.randint(0, len(x_test) - n)
     end = start + n
     to_predict = x_test[start:end]
@@ -43,6 +54,15 @@ def visualize_predictions(model, n=15, rows=3):
 
 
 def history_plot(history):
+    """
+    Візуалізує історію тренувань моделі, показуючи точність та втрати.
+
+    Аргументи:
+    history (tf.keras.callbacks.History): Історія тренувань моделі.
+
+    Повертає:
+    None: Функція нічого не повертає, вона лише візуалізує результати.
+    """
     plt.plot(history.history["accuracy"])
     plt.plot(history.history["val_accuracy"])
     plt.legend(["accuracy", "val_accuracy"])
@@ -58,6 +78,18 @@ def history_plot(history):
 
 
 def calculate_percent_right_mob(test, labels, model):
+    """
+    Обчислює відсоток правильних класифікацій для кожного класу на тестовому наборі даних
+    та візуалізує результати у вигляді гістограми для мобільної мережі.
+
+    Аргументи:
+    test (numpy.array): Тестові дані.
+    labels (numpy.array): Відповідні мітки до тестових даних.
+    model (tf.keras.Model): Модель, яка буде використовуватись для передбачення.
+
+    Повертає:
+    None: Функція нічого не повертає, вона лише візуалізує результати.
+    """
     y_pred_probs = model.predict(test)
     y_pred = np.argmax(y_pred_probs, axis=1)
     y_true = labels
@@ -101,6 +133,18 @@ def calculate_percent_right_mob(test, labels, model):
 
 
 def calculate_percent_right_base(test, labels, model):
+    """
+    Обчислює відсоток правильних класифікацій для кожного класу на тестовому наборі даних
+    та візуалізує результати у вигляді гістограми для нейромережі.
+
+    Аргументи:
+    test (numpy.array): Тестові дані.
+    labels (numpy.array): Відповідні мітки до тестових даних.
+    model (tf.keras.Model): Модель, яка буде використовуватись для передбачення.
+
+    Повертає:
+    None: Функція нічого не повертає, вона лише візуалізує результати.
+    """
     y_pred_probs = model.predict(test)
     y_pred = np.argmax(y_pred_probs, axis=1)
     y_true = np.argmax(labels, axis=1)
