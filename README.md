@@ -51,9 +51,6 @@ cd ds_project
    pip install -r requirements.txt
    ```
 
-4. Training the Models
-   Open Jupyter Notebook:
-
 ## Training the Models
 
 Navigate to the notebooks directory and open the respective notebooks for training:
@@ -78,6 +75,6 @@ python main.py
 
 Open the link provided by Gradio in your web browser. You should see a web interface where you can upload images and get predictions from the trained models.
 
-![An example of the image classification application](https://drive.google.com/file/d/1mI7JDzh-iLEXTq_PxXxh2hJVll_n4aTH/view?usp=drive_link)
+![An example of the image classification application](https://asset.cloudinary.com/dtjnagvw1/6c91b21afc2df3ac59f5a96b3a20915e)
 
 ### [**Link demo**](https://huggingface.co/spaces/the10or/class_pic)
