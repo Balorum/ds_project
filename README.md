@@ -33,10 +33,10 @@ This repository contains a comprehensive image classification application based 
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/Balorum/ds_project.git
-cd ds_project
-```
+   ```bash
+   git clone https://github.com/Balorum/ds_project.git
+   cd ds_project
+   ```
 
 2. Create a virtual environment and activate it (for example python venv):
 
@@ -75,6 +75,6 @@ python main.py
 
 Open the link provided by Gradio in your web browser. You should see a web interface where you can upload images and get predictions from the trained models.
 
-![An example of the image classification application](https://asset.cloudinary.com/dtjnagvw1/6c91b21afc2df3ac59f5a96b3a20915e)
+![An example of the image classification application](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718464282/ds_project/example_ipsko3.png)
 
 ### [**Link demo**](https://huggingface.co/spaces/the10or/class_pic)
