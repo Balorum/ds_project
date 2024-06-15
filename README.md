@@ -69,11 +69,13 @@ Run the Gradio app:
 
 Install the required packages:
 
-```
-python main.py
-```
+    ```
+    python main.py
+    ```
 
 Open the link provided by Gradio in your web browser. You should see a web interface where you can upload images and get predictions from the trained models.
+
+### _An example of the image classification application:_
 
 ![An example of the image classification application](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718464282/ds_project/example_ipsko3.png)
 
