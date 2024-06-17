@@ -79,9 +79,9 @@ Open the link provided by Gradio in your web browser. You should see a web inter
 
 ![An example of the image classification application](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718464282/ds_project/example_ipsko3.png)
 
-### **_Models used_**
+## **_Models used_**
 
-#### MobileNetV2
+### MobileNetV2
 
 _MobileNet V2 provides an efficient neural network architecture that is particularly well-suited for mobile and embedded vision applications. Its use of inverted residuals, linear bottlenecks, and depthwise separable convolutions allows it to achieve high performance with minimal computational resources._
 
@@ -89,12 +89,12 @@ _Accuracy obtained:_ ≈0.84
 
 _Loss obtained:_ ≈0.98
 
-##### Charts
+#### Charts
 
-_MobileNetV2 Accuracy_
+<div align="center">_MobileNetV2 Accuracy_</div>
 ![Mobile_acc](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630103/ds_project/accuracy_mobilenet.png)
 
-_MobileNetV2 Accuracy_
+_MobileNetV2 Loss_
 ![Mobile_loss](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630265/ds_project/loss_mobilenet.png)
 
 ### [**Link demo**](https://huggingface.co/spaces/the10or/class_pic)
