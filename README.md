@@ -89,8 +89,6 @@ _Accuracy obtained:_ ≈0.84
 
 _Loss obtained:_ ≈0.98
 
-#### Charts
-
 <div align="center">
 
 **MobileNetV2 Accuracy**
@@ -111,8 +109,6 @@ _Accuracy obtained:_ ≈0.86
 
 _Loss obtained:_ ≈0.83
 
-#### Charts
-
 <div align="center">
 
 **InceptionV3 Accuracy**
@@ -122,6 +118,26 @@ _Loss obtained:_ ≈0.83
 **InceptionV3 Loss**
 
 ![Inception_loss](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630041/ds_project/loss_interception.png)
+
+</div>
+
+### ResNet 50
+
+_ResNet-50 is a powerful and efficient deep learning architecture that has significantly advanced the field of computer vision. Its use of residual learning and bottleneck blocks allows it to train very deep networks without the issues associated with vanishing gradients. The architecture’s depth and ability to learn complex features make it suitable for a wide range of image recognition tasks, from classification to detection and segmentation._
+
+_Accuracy obtained:_ ≈0.86
+
+_Loss obtained:_ ≈0.83
+
+<div align="center">
+
+**ResNet Accuracy**
+
+![ResNet_acc](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630480/ds_project/accuracy_resnet.png)
+
+**ResNet Loss**
+
+![ResNet_loss](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630487/ds_project/loss_resnet.png)
 
 </div>
 
