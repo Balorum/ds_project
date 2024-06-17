@@ -91,13 +91,37 @@ _Loss obtained:_ ≈0.98
 
 #### Charts
 
-<div align="center"> MobileNetV2 Accuracy
+<div align="center">
+
+**MobileNetV2 Accuracy**
 
 ![Mobile_acc](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630103/ds_project/accuracy_mobilenet.png)
 
-MobileNetV2 Loss
+**MobileNetV2 Loss**
 
 ![Mobile_loss](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630265/ds_project/loss_mobilenet.png)
+
+</div>
+
+### Inception V3
+
+_Inception V3 is a powerful and efficient convolutional neural network architecture that builds on the innovations of previous Inception models. Its use of factorized convolutions, batch normalization, label smoothing, and efficient grid size reduction techniques make it a robust choice for various computer vision tasks. The architecture’s ability to capture features at multiple scales through its inception modules allows it to achieve high accuracy while maintaining computational efficiency._
+
+_Accuracy obtained:_ ≈0.86
+
+_Loss obtained:_ ≈0.83
+
+#### Charts
+
+<div align="center">
+
+**InceptionV3 Accuracy**
+
+![Inception_acc](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718629988/ds_project/accuracy_interception.png)
+
+**InceptionV3 Loss**
+
+![Inception_loss](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630041/ds_project/loss_interception.png)
 
 </div>
 
