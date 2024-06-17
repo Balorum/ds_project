@@ -91,10 +91,14 @@ _Loss obtained:_ ≈0.98
 
 #### Charts
 
-<div align="center">_MobileNetV2 Accuracy_</div>
+<div align="center"> MobileNetV2 Accuracy
+
 ![Mobile_acc](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630103/ds_project/accuracy_mobilenet.png)
 
-_MobileNetV2 Loss_
+MobileNetV2 Loss
+
 ![Mobile_loss](https://res.cloudinary.com/dtjnagvw1/image/upload/v1718630265/ds_project/loss_mobilenet.png)
+
+</div>
 
 ### [**Link demo**](https://huggingface.co/spaces/the10or/class_pic)
