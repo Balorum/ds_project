@@ -29,7 +29,7 @@ This repository contains a comprehensive image classification application based 
 - **gitignore**: Ignore files
 - **requirements.txt**: A file with a list of packages for the correct operation of the program
 
-## Setup Instructions
+## Setup Instructions github
 
 1. Clone the repository:
 
@@ -50,6 +50,11 @@ This repository contains a comprehensive image classification application based 
    ```
    pip install -r requirements.txt
    ```
+
+## Setup Instructions docker
+
+**_Go to the website and follow to the instructions:_**
+[**Docker hub**](https://hub.docker.com/r/rznv/ds_project)
 
 ## Training the Models
 
