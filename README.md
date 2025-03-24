@@ -146,4 +146,4 @@ _Loss obtained:_ ≈0.83
 
 </div>
 
-### [**Link demo**](https://huggingface.co/spaces/the10or/class_pic)
+### [**Link demo**](https://huggingface.co/spaces/Balorum/cifar-10-models)
